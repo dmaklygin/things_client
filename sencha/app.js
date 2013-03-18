@@ -14,7 +14,15 @@ Ext.application({
 
     views: ['Main'],
 
-    controllers: [ 'Things' ],
+    models:[
+        "Place"
+    ],
+
+    stores:[
+        "Places"
+    ],
+
+    controllers: [ 'Things', 'Places' ],
 
     icon: {
         '57': 'resources/icons/Icon.png',

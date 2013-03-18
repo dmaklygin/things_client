@@ -1,6 +1,6 @@
-Ext.define('MyApp.controller.Things', {
+Ext.define('sencha.controller.Things', {
 
-    extend: 'Ext.app.Controller'
+    extend: 'Ext.app.Controller',
 
     config: {
         control: {

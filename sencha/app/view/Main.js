@@ -3,11 +3,11 @@ Ext.define('sencha.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'sencha.view.Places.Page'
     ],
     config: {
         tabBarPosition: 'bottom',
-
+        fullscreen: true,
         items: [
             {
                 title: 'New Thing',
@@ -39,12 +39,17 @@ Ext.define('sencha.view.Main', {
             },
             {
                 title: 'Places',
-                iconCls: 'action',
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Places'
-                }
+                xclass: 'sencha.view.Places.Page',
+                iconCls: 'action'
+//                items:
+////                {
+////                    docked: 'top',
+////                    xtype: 'titlebar',
+////                    title: 'Places'
+////                }
+//                {
+//                    xclass:"sencha.view.Places.Page"
+//                }
             },
             {
                 title: 'Profile',
